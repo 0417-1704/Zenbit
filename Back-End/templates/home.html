@@ -1,0 +1,35 @@
+<!-- FILEPATH: /c:/Users/messi/OneDrive/Escritorio/flaskitoo/templates/home.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Torneos de Videojuegos</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Torneos</a></li>
+          <li><a href="#">Contacto</a></li>
+          <!-- Si le da click en cerrar sesión, se debe redirigir a la ruta index -->
+          <li style="float:right"><a href="/" onclick="return confirmLogout()">Cerrar sesión</a></li>
+
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Bienvenido a los torneos de videojuegos</h1>
+      <p>¡Aquí encontrarás los mejores torneos de tus videojuegos favoritos!</p>
+      <!-- Aquí iría el resto del contenido de la página -->
+    </main>
+    <footer>
+      <p>Derechos reservados &copy; 2021 Torneos de Videojuegos</p>
+    </footer>
+    <script>
+    function confirmLogout() {
+        return confirm("¿Estás seguro de que quieres cerrar sesión?");
+    }
+    </script>
+  </body>
+</html>
