@@ -28,7 +28,7 @@ migrate.init_app(app, db)
 from models import Participante
 
 
-@app.route('/index')
+@app.route('/')
 def index():
     return render_template('index.html')
 
