@@ -28,7 +28,7 @@ migrate.init_app(app, db)
 from models import Participante
 
 
-@app.route('/')
+@app.route('/index')
 def index():
     return render_template('index.html')
 
@@ -56,6 +56,17 @@ def video():
 @app.route('/presentacion')
 def presentacion():
     return render_template('presentacion.html')
+
+# pagina de visualizacion de perfil
+@app.route('/verPerfil')
+def presentacion():
+    return render_template('verPerfil.html')
+
+# pagina de edición de perfil
+@app.route('/editarPerfil')
+def presentacion():
+    return render_template('editarPerfil.html')
+
 
 # usar modo debug para que se actualice automaticamente
 if __name__ == '__main__':
