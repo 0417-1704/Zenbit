@@ -4,14 +4,22 @@
 <html>
   <head>
     <title>Torneos de Videojuegos</title>
+    <style>
+      /* Asegúrate de que las imágenes no sean demasiado grandes */
+      nav ul li a img {
+        width: 550px;
+        height: 50px;
+      }
+      
+    </style>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Torneos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#"><img src="inicio.png" alt="Inicio"></a></li>
+          <li><a href="#"><img src="spider-man-2.png" alt="Juegos"></a></li>
+          <li><a href="#"><img src="contacto.png" alt="Contacto"></a></li>
           <!-- Si le da click en cerrar sesión, se debe redirigir a la ruta index -->
           <li style="float:right"><a href="/" onclick="return confirmLogout()">Cerrar sesión</a></li>
 
@@ -23,9 +31,6 @@
       <p>¡Aquí encontrarás los mejores torneos de tus videojuegos favoritos!</p>
       <!-- Aquí iría el resto del contenido de la página -->
     </main>
-    <footer>
-      <p>Derechos reservados &copy; 2021 Torneos de Videojuegos</p>
-    </footer>
     <script>
     function confirmLogout() {
         return confirm("¿Estás seguro de que quieres cerrar sesión?");
