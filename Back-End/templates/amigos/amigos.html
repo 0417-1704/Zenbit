@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vinculación con archivo de estilo -->
+    <link rel="stylesheet" href="style-amigos.css">
+    <!-- Título de la página -->
+    <title>Mis Amigos</title>
+</head>
+
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Encabezado de la página -->
+        <header>
+            <h1>Mis Amigos</h1>
+            <!-- Botón para ver el perfil propio -->
+            <a href="verPerfil.html"><button id="verPerfilBtn">Ver mi perfil</button></a>
+        </header>
+
+        <!-- Sección de amigos -->
+        <section id="amigosSection">
+            <h2>Mis Amigos</h2>
+            <!-- Lista de amigos -->
+            <ul id="listaAmigos">
+                <!-- Perfil Ficticio 1 -->
+                <li><strong>Juan Pérez</strong> - Trabajo <button class="verPerfilBtn">Ver Perfil</button></li>
+                <!-- Perfil Ficticio 2 -->
+                <li><strong>Maria González</strong> - Escuela <button class="verPerfilBtn">Ver Perfil</button></li>
+                <!-- ... Puedes agregar más perfiles ficticios aquí ... -->
+            </ul>
+        </section>
+
+        <!-- Sección para agregar amigos -->
+        <section id="agregarAmigoSection">
+            <h2>Agregar Amigo</h2>
+            <!-- Formulario para agregar amigo -->
+            <input type="text" id="nombreAmigo" placeholder="Nombre del Amigo">
+            <select id="rubroAmigo">
+                <option value="trabajo">Trabajo</option>
+                <option value="escuela">Escuela</option>
+            </select>
+            <button id="agregarAmigoBtn">Agregar Amigo</button>
+        </section>
+    </div>
+
+    <!-- Script de JavaScript específico para la gestión de amigos -->
+    <script src="script-amigos.js"></script>
+</body>
+</html>
