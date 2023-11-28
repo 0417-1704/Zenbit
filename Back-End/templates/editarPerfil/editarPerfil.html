@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Metadatos del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página y vinculación con archivo de estilo -->
     <title>Editar Perfil - PlayBit</title>
     <link rel="stylesheet" href="styles-eP.css">
 </head>
 
 <body>
+    <!-- Encabezado de la página -->
     <header>
         <h1>Editar Perfil</h1>
+        <!-- Barra de navegación -->
         <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Juegos</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Juegos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
+    <!-- Contenido principal de la página -->
     <main>
+        <!-- Formulario para editar el perfil -->
         <form id="edit-profile-form">
-        <label for="edit-username">Nuevo Nombre de Usuario:</label>
-        <input type="text" id="edit-username" name="edit-username" required><br><br>
+            <label for="edit-username">Nuevo Nombre de Usuario:</label>
+            <input type="text" id="edit-username" name="edit-username" required><br><br>
 
-        <label for="edit-email">Nuevo Correo:</label>
-        <input type="email" id="edit-email" name="edit-email" required><br><br>
+            <label for="edit-email">Nuevo Correo:</label>
+            <input type="email" id="edit-email" name="edit-email" required><br><br>
 
-        <label for="edit-profile-image">Nueva Foto de Perfil:</label>
-        <input type="file" id="edit-profile-image" name="edit-profile-image"><br><br>
-        
-        <label for="edit-password">Nueva Contraseña:</label>
-        <input type="password" id="edit-password" name="edit-password" required><br><br>
+            <label for="edit-profile-image">Nueva Foto de Perfil:</label>
+            <input type="file" id="edit-profile-image" name="edit-profile-image"><br><br>
+            
+            <label for="edit-password">Nueva Contraseña:</label>
+            <input type="password" id="edit-password" name="edit-password" required><br><br>
 
-        <label for="confirm-password">Confirmar Nueva Contraseña:</label>
-        <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+            <label for="confirm-password">Confirmar Nueva Contraseña:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required><br><br>
 
-
-        <input type="submit" value="Guardar Cambios">
-        <button type="button" id="cancel-edit-btn">Cancelar</button>
+            <!-- Botones para guardar cambios y cancelar la edición -->
+            <input type="submit" value="Guardar Cambios">
+            <button type="button" id="cancel-edit-btn">Cancelar</button>
         </form>
     </main>
 
+    <!-- Pie de página -->
     <footer>
         <p>© 2021 Mi sitio de videojuegos. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- Script de JavaScript específico para la página de edición de perfil -->
     <script src="script-eP.js"></script>
 </body>
 </html>
