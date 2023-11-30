@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Título de la página y vinculación con archivo de estilo -->
     <title>PlayBit - Registro</title>
-    <link rel="stylesheet" href="style-registro.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style-registro.css') }}">
 </head>
 
 <body>
@@ -51,6 +51,6 @@
     </footer>
 
     <!-- Script de JavaScript específico para la página de registro -->
-    <script src="script-registro.js"></script>
+    <script src="{{ url_for('static', filename='script-registro.js') }}"></script>
 </body>
 </html>

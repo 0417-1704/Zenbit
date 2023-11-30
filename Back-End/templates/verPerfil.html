@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Título de la página y vinculación con archivo de estilo -->
     <title>Mi Perfil - PlayBit</title>
-    <link rel="stylesheet" href="style-vP.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style-vP.css') }}">
 </head>
 
 <body>
@@ -44,6 +44,6 @@
     </footer>
 
     <!-- Script de JavaScript específico para la página de visualización de perfil -->
-    <script src="script-vP.js"></script>
+    <script src="{{ url_for('static', filename='script-vP.js') }}"></script>
 </body>
 </html>
